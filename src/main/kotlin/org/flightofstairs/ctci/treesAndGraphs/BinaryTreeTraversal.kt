@@ -1,6 +1,6 @@
 package org.flightofstairs.ctci.treesAndGraphs
 
-data class BTreeNode<T>(val item: T, val left: BTreeNode<T>?, val right: BTreeNode<T>?)
+data class BTreeNode<T>(var item: T, var left: BTreeNode<T>?, var right: BTreeNode<T>?)
 
 fun <T> BTreeNode<T>.preOrderTraversal(): Sequence<T> =
     sequenceOf(item) + (left?.preOrderTraversal() ?: emptySequence()) + (right?.preOrderTraversal() ?: emptySequence())
