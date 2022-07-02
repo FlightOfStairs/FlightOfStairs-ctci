@@ -40,6 +40,8 @@ naming:
     active: true
   LambdaParameterNaming:
     active: true
+  MatchingDeclarationName:
+    active: false
   NonBooleanPropertyPrefixedWithIs:
     active: true
   VariableMaxLength:
